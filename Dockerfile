@@ -1,4 +1,4 @@
-FROM quay.io/ibmgaragecloud/node as build
+FROM node:latest as build
 WORKDIR /app
 COPY . .
 RUN npm install
